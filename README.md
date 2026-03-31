@@ -27,9 +27,8 @@ Script 2: Package Inspector
 
 This script aims to identify whether Python is installed, display its version, and the installed packages. Therefore, such a step makes sense to know which tools and libraries are installed in the system already. 
 
-Script 3: Disk & Permission Auditor 
-
-Script 7: Check disk usage, large files in a system. Also, the presence of insecure file permissions, such as 777, is checked (MFT, n.d.). 
+Script 3: Disk & Permission Auditor :
+Check disk usage, large files in a system. Also, the presence of insecure file permissions, such as 777, is checked (MFT, n.d.). 
 
 Script 4: Log Analyzer 
 
@@ -39,8 +38,14 @@ Script 5: Manifest Generator
 
 This script creates a simple open source manifesto file. The manifesto covers essential ideas that define open source software such as freedom, collaboration, and transparency. 
 
-How to Run (Linux) 
+How to Run (Linux)
 
-First, provide execution permission: 
+First, give execution permission:
+chmod +x script1.sh script2.sh script3.sh script4.sh script5.sh
 
-```bash chmod +x script1.sh script2.sh script3.sh script4.sh script5.sh 
+Then run the scripts:
+./script1.sh
+./script2.sh
+./script3.sh
+./script4.sh /var/log/syslog error
+./script5.sh
